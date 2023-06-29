@@ -21,14 +21,14 @@ float y3(float A[])
 }
 void y4(float A[])
 {
-	 demscp=0;
+	int dem=0;
 	for(int i=0;i<n;i++)
 	{
 		if(A[i] < 0 )
-			demscp++;
+			dem++;
 	}
-	if(demscp)
-		cout << "Trong mang co " << demscp << " so am";
+	if(dem)
+		cout << "Trong mang co " << dem << " so am";
 	else 
 		cout << "Trong mang khong co so am nao";
 }
@@ -66,7 +66,15 @@ void y6(float A[])
 		cout << "Trong mang khong co so chinh phuong nen khong co trung binh cong";
 }
 void y7(float A[])
-{	if(demscp)
+{	
+	for(int i =0 ; i<n ;i++)
+	{
+		if(check(A[i]))
+			demscp++;
+	}
+
+	
+	if(demscp)
 	{
 		cout << "Cac so chinh phuong co trong mang la: ";
 		for(int i=0; i<n; i++)

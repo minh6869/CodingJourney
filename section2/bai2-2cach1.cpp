@@ -13,6 +13,6 @@ int main()
 {
     cout << "Nhap n = ";
     cin >> n;
-    cout << "Tong tu 1 den 3n la: " << tong(2) + 1;
+    cout << "Tong tu 1 den 3n la: " << tong(3) + 1;
     return 0;
 }

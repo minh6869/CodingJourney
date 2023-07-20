@@ -121,7 +121,7 @@ void sortselec(int *p, int &n)
         // int a = p[index];
         // p[index] = p[i];
         // p[i] = a;
-        swap(p[index],p[i]);
+        swapp(p[index],p[i]);
     }
     cout << "Mang sau khi sap xep giam dan la: ";
     xuat(p,n);

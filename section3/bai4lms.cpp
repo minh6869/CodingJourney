@@ -7,6 +7,8 @@ void chenphantu(string &s)
     size_t a = s.find(s1);
     if (a == string::npos)
         cout << "Xau s khong chua tu 'gmail.com' nen khong chen duoc";
+    else
+    {
     while (a != string::npos)
     {
         s.insert(a,"@");
@@ -14,6 +16,7 @@ void chenphantu(string &s)
         a = s.find(s1,a+2);
     }
     cout << s;
+    }
         
 }
 int main()

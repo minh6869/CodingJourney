@@ -3,7 +3,7 @@
 using namespace std;
 int demtu(string s, int i, int tmp)
 {
-    if(s[i] == '\0')\
+    if(s[i] == '\0')
         return 0;
     if(tmp == 0 && s[i] != ' ')
         return 1+demtu(s,i+1,1);

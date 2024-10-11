@@ -106,12 +106,29 @@ void init() {
     // Thiet lap che do chieu 2D
     glMatrixMode(GL_PROJECTION);
     gluOrtho2D(0.0, 500.0, 0.0, 500.0);
+    // glTranslatef()
+    
 }
 
 void display() {
     glClear(GL_COLOR_BUFFER_BIT);
-    glColor3f(1.0, 1.0, 0.0); // Màu xanh dương
-    Bresenham(10, 400, 20, 20);
+    glColor3f(0.0, 1.0, 0.0); // Màu xanh dương
+    // Bresenham( 100, 300, 300, 300);
+    // Bresenham(300, 100, 300, 300);
+    // Bresenham(100, 300, 300, 100);
+    // glColor3f(1.0, 0.0, 0.0);
+    // Bresenham(100, 100, 300, 100);
+    // Bresenham(100, 300, 300, 100);
+    // Bresenham(100, 100, 100, 300);
+    // Bresenham(250, 500, 500, 250);
+    Bresenham(132, 86, 250, 450);
+    Bresenham(132, 86, 440, 308);
+    Bresenham(250, 450, 368, 86);
+    Bresenham(60, 308, 440, 308);
+    Bresenham(60, 308, 368, 86);
+    // Bresenham(420, 100, 400, 350);
+    // Bresenham(100, 250, 400, 350);
+    // Bresenham(100, 250, 500, 250);
     glFlush();
 }
 
